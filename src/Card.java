@@ -14,15 +14,15 @@ public class Card extends JPanel {
     private float rotationY = 0;
     static int counter = 1;
     private static final List<Integer> NumcardList = new ArrayList<>();
-    static boolean statusGame=false;
+    static boolean statusGame = false;
+    private boolean isCorrect = false;
 
     public Card(String frontText, String backText) {
         this.frontText = frontText;
         this.backText = backText;
         setPreferredSize(new Dimension(200, 100));
-        setOpaque(false); // Make the panel transparent
+        setOpaque(false);
 
-        // Mouse listener to trigger flip
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -34,32 +34,27 @@ public class Card extends JPanel {
     }
 
     private void startFlipAnimationBack() {
-
         isFlipping = true;
         NumcardList.add(Integer.parseInt(backText));
         Timer timer = new Timer(16, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                rotationY += 10; // Increment rotation
+                rotationY += 10;
                 if (rotationY >= 180) {
-                    rotationY = 180; // Reset rotation
+                    rotationY = 180;
                     isFlipping = false;
                     ((Timer) e.getSource()).stop();
                     if (Integer.parseInt(backText) != counter) {
                         GameCard.reversAllCard();
                         counter = 1;
+                        isCorrect = false;
                     } else {
                         counter++;
-                        if ((Integer.parseInt(GameCard.getNbCard())+1)==counter){
-                            statusGame=true;
+                        if ((Integer.parseInt(GameCard.getNbCard()) + 1) == counter) {
+                            statusGame = true;
                             counter = 1;
                         }
-
-
-
-
-
-
+                        isCorrect = true;
                     }
                 }
                 repaint();
@@ -73,11 +68,12 @@ public class Card extends JPanel {
         Timer timer = new Timer(16, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                rotationY -= 10; // Decrement rotation
+                rotationY -= 10;
                 if (rotationY <= 0) {
-                    rotationY = 0; // Reset rotation
+                    rotationY = 0;
                     isFlipping = false;
-                    ((Timer) e.getSource()).stop(); // Stop animation
+                    ((Timer) e.getSource()).stop();
+                    isCorrect = false;
                 }
                 repaint();
             }
@@ -94,19 +90,16 @@ public class Card extends JPanel {
         int width = getWidth();
         int height = getHeight();
 
-        // Clear background
+
         g2d.setColor(getBackground());
         g2d.fillRect(0, 0, width, height);
 
-        // Calculate scale factor for Y-axis flipping
         double scale = Math.abs(Math.cos(Math.toRadians(rotationY)));
 
-        // Translate to center for rotation effect
         g2d.translate(width / 2.0, height / 2.0);
-        g2d.scale(scale, 1); // Scale only on X-axis
+        g2d.scale(scale, 1);
         g2d.translate(-width / 2.0, -height / 2.0);
 
-        // Draw card face
         if (rotationY < 90) {
             drawFrontFace(g2d, width, height);
         } else {
@@ -115,8 +108,11 @@ public class Card extends JPanel {
     }
 
     private void drawFrontFace(Graphics2D g2d, int width, int height) {
-        // Draw rectangular front face
-        g2d.setColor(new Color(70, 130, 180)); // Solid color for front
+        if (isCorrect) {
+            g2d.setColor(new Color(0, 128, 0));
+        } else {
+            g2d.setColor(new Color(70, 130, 180));
+        }
         g2d.fillRect(10, 10, width - 20, height - 20);
 
         // Draw border
@@ -134,24 +130,24 @@ public class Card extends JPanel {
 
     private void drawBackFace(Graphics2D g2d, int width, int height) {
         // Draw rectangular back face
-        g2d.setColor(new Color(105, 105, 105)); // Solid color for back
+        if (isCorrect) {
+            g2d.setColor(new Color(0, 128, 0));
+        } else {
+            g2d.setColor(new Color(105, 105, 105));
+
+        }
         g2d.fillRect(10, 10, width - 20, height - 20);
 
-        // Draw border
         g2d.setColor(Color.BLACK);
         g2d.drawRect(10, 10, width - 20, height - 20);
 
-        // Draw back text
+
         g2d.setColor(Color.WHITE);
         g2d.setFont(new Font("Serif", Font.BOLD, 40));
         FontMetrics fm = g2d.getFontMetrics();
         int textWidth = fm.stringWidth(backText);
         int textHeight = fm.getAscent();
         g2d.drawString(backText, (width - textWidth) / 2, (height + textHeight) / 2);
-    }
-
-    public static List<Integer> getNumcardList() {
-        return NumcardList;
     }
 
     public float getRotationY() {

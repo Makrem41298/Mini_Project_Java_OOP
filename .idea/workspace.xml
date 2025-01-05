@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b55fe11-2a65-4adf-8195-aa083790385d" name="Changes" comment="cration card 3D">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameCard.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+    <list default="true" id="7b55fe11-2a65-4adf-8195-aa083790385d" name="Changes" comment="version final 1.1">
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +100,9 @@
       <workItem from="1735905268426" duration="1262000" />
       <workItem from="1735921102831" duration="1130000" />
       <workItem from="1736008135372" duration="431000" />
-      <workItem from="1736088088380" duration="5039000" />
+      <workItem from="1736088088380" duration="5725000" />
+      <workItem from="1736097757000" duration="109000" />
+      <workItem from="1736111849908" duration="3446000" />
     </task>
     <task id="LOCAL-00001" summary="initialtion project Java">
       <option name="closed" value="true" />
@@ -115,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735051748445</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version final 1.0">
+      <option name="closed" value="true" />
+      <created>1736093209019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736093209019</updated>
+    </task>
+    <task id="LOCAL-00003" summary="version final 1.1">
+      <option name="closed" value="true" />
+      <created>1736115071818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736115071818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +137,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialtion project Java" />
     <MESSAGE value="cration card 3D" />
-    <option name="LAST_COMMIT_MESSAGE" value="cration card 3D" />
+    <MESSAGE value="version final 1.0" />
+    <MESSAGE value="version final 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="version final 1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

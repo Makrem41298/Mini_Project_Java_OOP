@@ -29,7 +29,7 @@ public class GameCard extends JFrame {
 
         this.setTitle("Game Card");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1500,900);
+        this.setSize(1920,1080 );
         this.setLocationRelativeTo(null);
         JPanel panel = new JPanel();
         JPanel panelPrencipal = new JPanel();
@@ -84,7 +84,7 @@ public class GameCard extends JFrame {
         }
         timeLabel =new JLabel(time+"s",SwingConstants.CENTER);
         panelPrencipal.add(timeLabel, BorderLayout.NORTH);
-        timeLabel.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10)); // 20px top and bottom padding
+        timeLabel.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
         timeLabel.setFont(new Font("Times New Roman", Font.PLAIN, 25));
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
         scheduler.scheduleAtFixedRate(() -> {
@@ -134,14 +134,15 @@ public class GameCard extends JFrame {
             if (cardList.get(i).getRotationY()!=0)
                 cardList.get(i).startFlipAnimationFront();
 
+
         }
     }
     public void GameOver(){
         int option = JOptionPane.showConfirmDialog(
-                null, // Parent component
-                "Do you want to repeat again ?", // Message
-                "Confirmation", // Title
-                JOptionPane.YES_NO_OPTION // Option type
+                null,
+                "Do you want to repeat again ?",
+                "Confirmation",
+                JOptionPane.YES_NO_OPTION
         );
         if (option == JOptionPane.YES_OPTION) {
             this.dispose();
