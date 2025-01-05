@@ -1,34 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b55fe11-2a65-4adf-8195-aa083790385d" name="Changes" comment="" />
+    <list default="true" id="7b55fe11-2a65-4adf-8195-aa083790385d" name="Changes" comment="cration card 3D">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameCard.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Makrem41298&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Makrem41298/Mini_Project_Java_OOP&quot;,
+    &quot;accountId&quot;: &quot;0f6a536a-fb41-4a07-b466-f0faa337ee80&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2qfRYvKMOEysQfi9z1O1AUS1EtL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/ABDERRAZEK/IdeaProjects/Mini_Project_Java_OOP/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CardFlipDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FixedBackFaceCardFlip.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.YAxisCardFlipDemo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;383&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ABDERRAZEK/IdeaProjects/Mini_Project_Java_OOP/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -48,19 +89,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735051696126</updated>
-      <workItem from="1735051697604" duration="6000" />
+      <workItem from="1735051697604" duration="7627000" />
+      <workItem from="1735140425447" duration="7608000" />
+      <workItem from="1735165663639" duration="68000" />
+      <workItem from="1735223859108" duration="2858000" />
+      <workItem from="1735229103359" duration="7944000" />
+      <workItem from="1735238240801" duration="3955000" />
+      <workItem from="1735253244401" duration="415000" />
+      <workItem from="1735298264503" duration="657000" />
+      <workItem from="1735312135898" duration="458000" />
+      <workItem from="1735396646165" duration="484000" />
+      <workItem from="1735414554908" duration="119000" />
+      <workItem from="1735781586871" duration="3538000" />
+      <workItem from="1735863149467" duration="8120000" />
+      <workItem from="1735905268426" duration="1262000" />
+      <workItem from="1735921102831" duration="1130000" />
+      <workItem from="1736008135372" duration="431000" />
+      <workItem from="1736088088380" duration="5039000" />
     </task>
+    <task id="LOCAL-00001" summary="initialtion project Java">
+      <option name="closed" value="true" />
+      <created>1735051748445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735051748445</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialtion project Java" />
+    <MESSAGE value="cration card 3D" />
+    <option name="LAST_COMMIT_MESSAGE" value="cration card 3D" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
+          <url>file://$PROJECT_DIR$/src/YAxisCardFlipDemo.java</url>
+          <line>97</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
